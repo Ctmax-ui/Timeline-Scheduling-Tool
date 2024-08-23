@@ -6,6 +6,11 @@
   box-sizing: border-box;
   font-family: "Poppins" , sans-serif;
 }
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
 
 :root{
   /* ===== Colors ===== */
@@ -1544,6 +1549,7 @@ body {
   text-overflow: ellipsis; /* Adds '...' to indicate more content */
   display: flex;
   flex-direction: column;
+  border-radius: 8px;
 }
 
 .timeline-note date {
@@ -1575,4 +1581,18 @@ body {
 #timeline-create li {
   min-width: 300px; /* Adjust based on your design */
   /* margin-right: 10px; Adjust spacing between items */
+}
+
+.progress-bar{
+
+}
+
+
+@keyframes addLoadingBar {
+  0%{
+    width: 100%;
+  }
+  100%{
+    width: 0;
+  }
 }
