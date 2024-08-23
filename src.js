@@ -179,7 +179,10 @@ function renderData() {
         newTimelineItem.style.cursor = 'pointer'
         newTimelineItem.innerHTML = `
             <div class="timeline-note position-relative">
-                <button class="btn position-absolute end-0 top-0 w-25 mt-1 me-1 edit-timelines" data-key="${k}">Edit</button>
+                <button class="btn btn-outline-success position-absolute end-0 top-0 mt-1 me-2 edit-timelines" data-key="${k}" style="width: 15%;"><i class="bi bi-pencil-square"></i></button>
+
+                <button class="btn btn-outline-danger position-absolute end-0 top-0 mt-5 me-2 px-1 delete-timelines" data-key="${k}" style="width: 15%;"><i class="bi bi-trash"></i></button>
+
                 <date>${v.date}</date>
                 <h6>${v.time}</h6>
                 <h4>${v.heading}</h4>
