@@ -321,8 +321,6 @@ body {
 /* FOOTER STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-
-
 .timeline-table{
   background: rgba(0, 0, 0, 0.237);
 }
@@ -333,23 +331,18 @@ body {
 
 
 .timeline-create {
-  transform-origin: 0 0; /* Ensure zoom happens from top-left corner */
-  transition: transform 0.25s ease; /* Smooth transitions */
-  cursor: grab; /* Change cursor to indicate draggable area */
-  position: relative; /* Ensure it can be moved around */
+  transform-origin: 0 0;
+  transition: transform 0.25s ease;
+  cursor: grab;
+  position: relative;
 }
 
 
 
-
-
-
-
-
 .timeline-note {
-  height: 100px; /* Fixed height for the note box */
-  white-space: nowrap; /* Keeps text in one line */
-  text-overflow: ellipsis; /* Adds '...' to indicate more content */
+  height: 100px;
+  white-space: nowrap; 
+  text-overflow: ellipsis;
   display: flex;
   flex-direction: column;
   border-radius: 8px;
@@ -365,30 +358,26 @@ body {
 
 
 #timeline-create {
-  overflow: hidden; /* Enable horizontal scrolling */
-  white-space: normal; /* Prevent line breaks */
-  position: relative; /* Ensure it is positioned relative for the scrollable container */
-  padding: 0px; /* Add padding inside the container */
-  background-color: #f9f9f900; /* Optional: Set a background color for better visibility */
-  transform-origin: 0 0; /* Ensure zoom happens from top-left corner */
-  transition: transform 0.25s ease; /* Smooth transitions *
+  overflow: hidden; 
+  white-space: normal; 
+  position: relative; 
+  padding: 0px; 
+  background-color: #f9f9f900;
+  transform-origin: 0 0; 
+  transition: transform 0.25s ease; 
 }
 
 #timeline-create ol {
-  display: flex; /* Arrange items horizontally */
+
   padding: 50;
   margin: 50;
-  list-style-type: none; /* Remove default list styling */
+  list-style-type: none;
 }
 
 #timeline-create li {
-  min-width: 300px; /* Adjust based on your design */
-  /* margin-right: 10px; Adjust spacing between items */
+  min-width: 300px;
 }
 
-.progress-bar{
-
-}
 
 
 @keyframes addLoadingBar {
